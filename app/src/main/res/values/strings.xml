@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">predictionApp</string>
+    <string name="tv_startPred">Сегодня ты</string>
+    <string name="tv_startRecom">Звёзды рекомендуют</string>
+
+    <string-array name="Predictions">
+        <item>не умрёшь</item>
+        <item>умрёшь</item>
+    </string-array>
+
+    <string-array name="Recommendation">
+        <item>не умереть</item>
+        <item>умереть</item>
+    </string-array>
+</resources>
