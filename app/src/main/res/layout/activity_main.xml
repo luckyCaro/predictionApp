@@ -15,7 +15,7 @@
             android:textStyle="bold"
             android:layout_marginTop="150dp"
             android:background="#00000000"
-            android:text="Предсказание на день"
+            android:text="@string/title_mainTv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +37,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="10dp"
             android:background="#00000000"
-            android:text="Чтобы день был лучше"
+            android:text="@string/title_RecTV"
             app:layout_constraintBottom_toTopOf="@+id/tv_dailyRecommendation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -51,5 +51,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
