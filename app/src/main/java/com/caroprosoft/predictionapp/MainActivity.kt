@@ -6,9 +6,11 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -38,6 +40,13 @@ class MainActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("mem", Context.MODE_PRIVATE)
         checkDate()
         fillRecommendation()
+
+        val fab: FloatingActionButton = findViewById(R.id.fab_info)
+        fab.setOnClickListener {
+            val alertDialog = AlertDialog.Builder(this)
+                .setMessage(R.string.message_infoDialog)
+            alertDialog.show()
+        }
     }
 
     fun checkDate() {
